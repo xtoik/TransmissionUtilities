@@ -5,11 +5,11 @@ using System.Runtime.CompilerServices;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle ("MoveAfterSeeding")]
-[assembly: AssemblyDescription ("")]
+[assembly: AssemblyDescription ("Frontend of the transmission-remote tool to move files after seeding finishes.")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("")]
+[assembly: AssemblyCompany ("XTK MAD Solutions")]
 [assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("xtoik")]
+[assembly: AssemblyCopyright ("Alvaro Rodriguez Otero <xtoiko@gmail.com>")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 
