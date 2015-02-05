@@ -53,7 +53,7 @@ namespace MoveAfterSeeding
 						}
 						else if (destinationFolder.FullName == originFolder.FullName)
 						{
-							_logger.InfoFormat ("The torrent is already in the destination folder: \"{0}\".", torrent.Location);
+							_logger.InfoFormat ("The torrent \"{1}\" is already in the destination folder: \"{0}\".", torrent.Location, torrent.FileName);
 						}
 						else if (isFile || isFolder)
 						{
