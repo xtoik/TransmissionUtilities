@@ -42,12 +42,17 @@ namespace TransmissionFrontend
 				FileName = fields [8]
 			};
 			TorrentStatus status;
-			if (!Enum.TryParse (fields [7], out status)) {
+			if (!Enum.TryParse (homogenizeStatus(fields [7]), out status)) {
 				_logger.ErrorFormat ("The torrent status \"{0}\" is unknown.", fields [7]);
 				status = TorrentStatus.Unknown;
 			}
 			torrent.Status = status;
 			return torrent;
+		}
+
+		string homogenizeStatus(string status)
+		{
+			return status.Replace (" & ", string.Empty);
 		}
 	}
 }

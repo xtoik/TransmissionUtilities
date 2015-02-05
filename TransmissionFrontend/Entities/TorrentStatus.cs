@@ -7,6 +7,7 @@ namespace TransmissionFrontend
 		Queued,
 		Idle,
 		Downloading,
+		UpDown,
 		Stopped,
 		Seeding,
 		Finished,
