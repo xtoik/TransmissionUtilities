@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="MoveAfterSeeding/MoveAfterSeeding.csproj">
+﻿<Properties StartupItem="MoveAfterSeeding/MoveAfterSeeding.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
