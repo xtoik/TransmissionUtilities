@@ -1,6 +1,0 @@
-/home/xtoik/DEV/Transmission/TransmissionUtilities/TransmissionFrontend/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/home/xtoik/DEV/Transmission/TransmissionUtilities/TransmissionFrontend/bin/Debug/log4net.dll
-/home/xtoik/DEV/Transmission/TransmissionUtilities/TransmissionFrontend/bin/Debug/TransmissionFrontend.dll.mdb
-/home/xtoik/DEV/Transmission/TransmissionUtilities/TransmissionFrontend/bin/Debug/TransmissionFrontend.dll
-/home/xtoik/DEV/Transmission/TransmissionUtilities/TransmissionFrontend/obj/Debug/TransmissionFrontend.dll
-/home/xtoik/DEV/Transmission/TransmissionUtilities/TransmissionFrontend/obj/Debug/TransmissionFrontend.dll.mdb

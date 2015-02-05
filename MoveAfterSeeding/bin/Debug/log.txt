@@ -1,4 +1,0 @@
-﻿2015-02-05 06:36:56,016 [1] INFO  MoveAfterSeeding.MainClass - There aren't finished torrents to move. 
-2015-02-05 06:37:49,518 [1] INFO  MoveAfterSeeding.MainClass - There aren't finished torrents to move. 
-2015-02-05 06:40:55,635 [1] INFO  MoveAfterSeeding.MainClass - There aren't finished torrents to move. 
-2015-02-05 06:41:01,678 [1] INFO  MoveAfterSeeding.MainClass - There aren't finished torrents to move. 
