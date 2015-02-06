@@ -71,7 +71,8 @@ namespace MoveAfterSeeding
 							string originPath = originFolder.FullName + Path.DirectorySeparatorChar + torrent.FileName;
 							if (isFile) File.Move (originPath, destinationPath);
 							else Directory.Move (originPath, destinationPath);
-							_logger.InfoFormat ("The {2} \"{0}\" has been moved to \"{1}\".", originPath, destinationPath, isFile ? "file" : "folder");
+							if (_logger.IsDebugEnabled) _logger.DebugFormat ("The {2} \"{0}\" has been moved to \"{1}\".", originPath, destinationPath, isFile ? "file" : "folder");
+							else _logger.InfoFormat ("\"{0}\" moved.", torrent.FileName);
 						}
 					}
 				}
