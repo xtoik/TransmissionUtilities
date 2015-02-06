@@ -8,6 +8,7 @@ namespace TransmissionFrontend
 		Idle,
 		Downloading,
 		UpDown,
+		Uploading,
 		Stopped,
 		Seeding,
 		Finished,
