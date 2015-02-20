@@ -38,7 +38,7 @@ namespace TransmissionFrontend
 			text = regex.Replace (text, "\t");
 			string[] fields = text.Split ('\t');
 			TorrentInfo torrent = new TorrentInfo {
-				Id = long.Parse (fields [0]),
+				Id = long.Parse (fields [0].Replace("*", string.Empty)),
 				FileName = fields [8]
 			};
 			TorrentStatus status;
