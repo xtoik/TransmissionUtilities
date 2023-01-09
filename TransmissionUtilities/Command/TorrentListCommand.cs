@@ -21,7 +21,7 @@ namespace TransmissionFrontend
 			List<TorrentInfo> ret = new List<TorrentInfo> ();
 			string output = _transmissionRemoteWrapper.ExecuteCommand("-l");
 			string[] outputLines = output.Split(new [] { Environment.NewLine }, StringSplitOptions.None);
-			if (outputLines[0].StartsWith("ID"))
+			if (outputLines[0].Trim().StartsWith("ID"))
 			{
 				for (int line = 1; line < outputLines.Length - 2; line++)
 				{

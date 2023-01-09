@@ -19,7 +19,7 @@ namespace MoveAfterSeeding
 
 		public static void Main (string[] args)
 		{
-			XmlConfigurator.Configure();
+			XmlConfigurator.Configure(File.OpenRead("log4net.config"));
 			_logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 			if (parseArgs (args)
 				&& checkDestination()) 
@@ -27,8 +27,17 @@ namespace MoveAfterSeeding
 				TransmissionRemoteWrapper transmissionRemoteWrapper = new TransmissionRemoteWrapper (_server, _user, _password);
 				TorrentListCommand torrentList = new TorrentListCommand (transmissionRemoteWrapper);
 				List<TorrentInfo> torrents = torrentList.GetTorrents ();
+
+				_logger.Info($"Count: {torrents.Count}");
+
 				TorrentInfoCommand torrentInfo = new TorrentInfoCommand (transmissionRemoteWrapper);
 				TorrentRemoveCommand torrentRemove = new TorrentRemoveCommand (transmissionRemoteWrapper);
+
+				foreach(var torr in torrents)
+				{
+					_logger.Info($"{torr.FileName} - {torr.Status}");
+				}
+
 				if (torrents.All (x => x.Status != TorrentStatus.Finished))
 					_logger.Info ("There aren't finished torrents to move.");
 				foreach (TorrentInfo torrent in torrents.Where(x => x.Status == TorrentStatus.Finished))
